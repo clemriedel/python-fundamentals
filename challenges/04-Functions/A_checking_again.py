@@ -2,10 +2,15 @@
 # Let's use functions to make our lives easier...
 
 sally_age = 12
-john_age = 21
+john_age = 22
 
 def can_drink(age):
-    return False # Again - make this depend on the age!
+ if age > 21: # conditionals take True or False
+    return True
+ else:
+    return False
+
+
 
 print "Sally can drink?", can_drink(sally_age)
 print "John can drink?", can_drink(john_age)
